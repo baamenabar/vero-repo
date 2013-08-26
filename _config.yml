@@ -1,15 +1,15 @@
-title:            Site Title
-description:      Describe your website here.
-logo:             site-logo.png
+title:            Verónica López
+description:      Masas & Repostería
+logo:             logo.svg
 disqus_shortname:
 #Comment out url when working locally to resolve base urls correctly
 #url:              http://your-website.com
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Verónica López
   avatar:         bio-photo.jpg
-  email:          you@email.com
+  email:          contacto@veronicalopez.cl
   # Social networking links used in footer. Update and remove as you like.
   twitter:
   facebook:
@@ -31,18 +31,17 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: About
-    url: /about
-  - title: Articles
-    url: /articles
-  - title: Theme Setup
-    url: /theme-setup
-  - title: Made Mistakes
-    url: http://mademistakes.com
-    external: true
+  - title: Inicio
+    url: /
+  - title: Mi empresa
+    url: /mi-empresa
+  - title: Pasteles
+    url: /pasteles
+  - title: Contacto
+    url: /contacto
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    America/Santiago
 future:      true
 pygments:    false
 markdown:    kramdown
@@ -65,4 +64,4 @@ kramdown:
     coderay_css: class
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "README.md", "README-theme.md"]
