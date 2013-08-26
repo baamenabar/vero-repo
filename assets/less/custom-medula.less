@@ -1,0 +1,191 @@
+.home {
+	position: relative;
+	figure {
+		float: right;
+		img {
+			width: 100px;
+			height: 100px;
+			.rounded(100px);
+		}
+	}
+	header {
+		h1 {
+			margin-bottom: 10px;
+		}
+	}
+	.home-content {
+		color: @verde-agua;
+		font-weight: 600;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.home-sub-content {
+		margin-top: 20px;
+		font-weight: inherit;
+		color: inherit;
+	}
+	@media @medium {
+		figure img {
+			width: 150px;
+			height: 150px;
+		}
+		header {
+			h1 {
+				font-size: 3rem;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	@media @large {
+		figure img {
+			width: 200px;
+			height: 200px;
+		}
+		header {
+			h1 {
+				font-size: 4rem;
+			}
+		}
+	}
+}
+
+.contact-strip {
+	position: absolute;
+	background-color: @verde-agua;
+	color: @white;
+	height: 85px;
+	font-size: 0.9rem;
+	text-align: center;
+	width: 100%;
+	left: 0;
+	margin-top: 20px;
+	padding-start: 0;
+	text-shadow: 0 1px 1px darken(@verde-agua, 90%);
+	ul {
+		padding-left: 0px;
+	}
+	li {
+		list-style: none;
+		a {
+			color: inherit;
+			border-bottom: 1px dotted white;
+		}
+		&:first-child { /* Texto 'Pedidos al xxxxxx' */
+			font-size: 1rem;
+		}
+	}
+	@media @medium {
+		font-size: 1.25rem;
+		ul {
+			line-height: 42px;
+		}
+		li {
+		display: inline;
+			&:first-child { /* Texto 'Pedidos al xxxxxx' */
+				font-size: 1.4rem;
+			}
+			&:before {
+				content: ' · ';
+			}
+			&:first-child:before {
+				content: '';
+			}
+		}
+	}
+	@media @large {
+		height: 100px;
+		font-size: 1.6rem;
+		ul {
+			line-height: 50px;
+		}
+		li {
+			&:first-child { /* Texto 'Pedidos al xxxxxx' */
+				font-size: 1.7rem;
+			}
+		}
+	}
+}
+
+.home-cakes {
+	margin-top: 125px;
+	overflow: hidden;
+}
+
+.cakes-list {
+	margin: 0 auto;
+	.cake {
+		width: 100%;
+		margin-right: 5px;
+		margin-left: 5px;
+		h2 {
+			margin-bottom: 0;
+		}
+		span {
+			font-size: 1rem;
+			line-height: 5px;
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+	.cake-footer {
+		text-align: center;
+		margin: 10px auto;
+		color: @white;
+		text-shadow: 0 1px 1px darken(@verde-agua, 90%);
+		width: 80%;
+		div {
+			float: left;
+		}
+	}
+	.cake-quote {
+		width: 50%;
+		background-color: @verde-agua;
+		.border-radius(0, 0, 10px, 10px);
+		a {
+			color: white;
+		}
+		&:hover {
+			background-color: darken(@verde-agua, 10%)
+		}
+	}
+	.cake-price {
+		width: 50%;
+		background-color: @cafe;
+		font-weight: 600;
+		.border-radius(10px, 10px, 0, 0);
+	}
+	@media @medium {
+		.cake {
+			float: left;
+			width: 300px;
+			margin-right: 20px;
+		}
+	}
+	@media @large {
+		.cake {
+			margin-right: 5px;
+		}
+	}
+}
+
+.home-contact {
+	clear: both;
+	margin-top: 30px;
+	form {
+		input {
+			margin-bottom: 5px;
+		}
+		textarea {
+			height: 200px;
+		}
+		button {
+			float: right;
+			color: white;
+			background-color: @verde-agua;
+			font-size: 2rem;
+			.rounded(30px);
+		}
+	}
+}

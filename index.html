@@ -1,12 +1,18 @@
 ---
-layout: page
-title: Latest Posts
-description: "A simple and clean responsive Jekyll theme for words and photos."
-tags: [Jekyll, theme, themes, responsive, blog, minimalism]
+layout: home-page
+index: true
+image:
+  feature: portada.jpg
+  feature-second: portada-2.jpg
+text:
+  main:
+    name: Verónica López
+    content: '"A base de prueba y error aprendiendo de forma autodidacta aprendí a preparar los mejores brazos de renia... el esfuerzo, constancia y la buena mano cambiaron mis productos a exquisitas preparaciones para celebrar."'
+    sub-content: Esto es otro texto que va a ir más abajo.
+  strip:
+    first: Pedidos al 9189 3654
+    second: <a href="mailto:veronicareposteria@vero.cl">veronicareposteria@vero.cl</a>
+    third: hacer pedidos con 24 hrs de anticipo
+  cakes: Pastelera a tus pasteles
+  contact: Cotizar
 ---
-
-<ul class="post-list">
-{% for post in site.posts limit:10 %} 
-  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
-{% endfor %}
-</ul>
