@@ -5,5 +5,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dignis
 modified: 2013-08-13
 category: pasteles
 price: $2.990
-image: brazo-reina
+image:
+  one: brazo-reina
+  two: brazo-reina-2
 ---

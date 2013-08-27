@@ -54,15 +54,15 @@
 	background-color: @verde-agua;
 	color: @white;
 	height: 85px;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	text-align: center;
 	width: 100%;
 	left: 0;
 	margin-top: 20px;
-	padding-start: 0;
 	text-shadow: 0 1px 1px darken(@verde-agua, 90%);
 	ul {
 		padding-left: 0px;
+		margin-top: 5px;
 	}
 	li {
 		list-style: none;
@@ -78,6 +78,7 @@
 		font-size: 1.25rem;
 		ul {
 			line-height: 42px;
+			margin-top: 16px;
 		}
 		li {
 		display: inline;
@@ -97,6 +98,7 @@
 		font-size: 1.6rem;
 		ul {
 			line-height: 50px;
+			margin-top: 24px;
 		}
 		li {
 			&:first-child { /* Texto 'Pedidos al xxxxxx' */
@@ -143,9 +145,7 @@
 		width: 50%;
 		background-color: @verde-agua;
 		.border-radius(0, 0, 10px, 10px);
-		a {
-			color: white;
-		}
+		cursor: pointer;
 		&:hover {
 			background-color: darken(@verde-agua, 10%)
 		}
@@ -180,39 +180,49 @@
 		textarea {
 			height: 200px;
 		}
-		button {
+		input[type=submit] {
 			float: right;
 			color: white;
 			background-color: @verde-agua;
-			font-size: 2rem;
-			.rounded(30px);
+			font-size: 1.5rem;
+			width: 200px;
+			padding: 10px;
+			margin-top: 10px;
+			.rounded(10px);
 		}
 	}
 }
 
 .footer {
-	text-align: center;
-	.footer-left {
-		display: inline;
+	text-align: left;
+	font-size: 0.9rem;
+	img {
+		width: 120px;
+		height: 120px;
+		float: left;
+		margin-top: -27px;
+		margin-bottom: 20px;
+	}
+	a:first-child {
+		font-size: 1rem;
+		font-weight: 700;
+	}
+	@media @medium {
 		font-size: 1rem;
 		img {
-			float: left;
+			width: 200px;
+			height: 200px;
+			margin-top: -30px;
 		}
-		.schema-content {
-			margin-top: 30px;
+		a:first-child {
+			font-size: 2rem;
 		}
 	}
-	.footer-right {
-		margin-top: 20px;
-		display: inline;
-		div {
-			font-weight: 600;
-			font-size: 2rem;
-			border-bottom: 1px solid @verde-agua;
-		}
-		span {
-			display: block;
-			font-size: 1.2rem;
-		}
+}
+
+.zoom-gallery {
+	a {
+		width: 300px;
+		height: 300px;
 	}
 }

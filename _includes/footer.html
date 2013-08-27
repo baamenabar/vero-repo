@@ -1,24 +1,19 @@
 <div class="footer entry-wrapper">
-	<div itemscope itemtype="http://schema.org/Organization" class="footer-left">
+	<div itemscope itemtype="http://schema.org/Organization">
 		<img src="images/logo.svg" itemprop="logo" width="200" height="200">
 		<div class="schema-content">
-			<a itemprop="url" href="{{ site.url }}"><div itemprop="name"><strong>Verónica López</strong></div>
-			</a>
+			<a itemprop="url" href="{{ site.url }}"><span itemprop="name">Verónica López</span></a>
 			<div itemprop="description">Masas y Repostería</div>
 			<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-			<span itemprop="streetAddress">Puente Alto</span><br>
-			<span itemprop="addressLocality">Santiago</span><br>
-			<span itemprop="addressCountry">Chile</span><br>
+				<span itemprop="streetAddress">Puente Alto</span>,
+				<span itemprop="addressLocality">Santiago</span>,
+				<span itemprop="addressCountry">Chile</span>
 			</div>
+			<a href="mailto:{{ site.owner.email }}"><span itempop"email">{{ site.owner.email }}</span></a><br>
+			<span itemprop="telephone">9189 3654</span>
 		</div>
 	</div>
-	<div class="footer-right">
-		<div>Pedidos</div>
-		<span>9189 3654</span>
-		<span>veronicareposteria@vero.cl</span>
-	</div>
 </div>
-<span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }} - Masas & Repostería. Puente Alto, Santiago, Chile.</span>
 <div class="social-icons">
 	{% if site.owner.twitter %}<a href="http://twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name}} on Twitter" target="_blank"><i class="icon-twitter icon-2x"></i></a>{% endif %}
 	{% if site.owner.facebook %}<a href="http://facebook.com/{{ site.owner.facebook }}" title="{{ site.owner.name}} on Facebook" target="_blank"><i class="icon-facebook icon-2x"></i></a>{% endif %}

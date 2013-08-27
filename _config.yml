@@ -31,14 +31,12 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: Inicio
-    url: /
   - title: Mi empresa
-    url: /mi-empresa
+    url: /#mi-empresa
   - title: Pasteles
-    url: /pasteles
+    url: /#pasteles
   - title: Contacto
-    url: /contacto
+    url: /#contacto
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Santiago

@@ -4731,17 +4731,17 @@ span + .entry-title {
   background-color: #4cbaab;
   color: #ffffff;
   height: 85px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-align: center;
   width: 100%;
   left: 0;
   margin-top: 20px;
-  padding-start: 0;
   text-shadow: 0 1px 1px #000000;
 }
-/* line 64, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+/* line 63, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
 .contact-strip ul {
   padding-left: 0px;
+  margin-top: 5px;
 }
 /* line 67, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
 .contact-strip li {
@@ -4766,73 +4766,75 @@ span + .entry-title {
   /* line 79, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
   .contact-strip ul {
     line-height: 42px;
+    margin-top: 16px;
   }
-  /* line 82, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+  /* line 83, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
   .contact-strip li {
     display: inline;
   }
-  /* line 84, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+  /* line 85, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
   .contact-strip li:first-child {
     /* Texto 'Pedidos al xxxxxx' */
   
     font-size: 1.4rem;
   }
-  /* line 87, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+  /* line 88, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
   .contact-strip li:before {
     content: ' · ';
   }
-  /* line 90, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+  /* line 91, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
   .contact-strip li:first-child:before {
     content: '';
   }
 }
 @media only screen and (min-width: 62.5em) {
-  /* line 95, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+  /* line 96, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
   .contact-strip {
     height: 100px;
     font-size: 1.6rem;
   }
-  /* line 98, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+  /* line 99, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
   .contact-strip ul {
     line-height: 50px;
+    margin-top: 24px;
   }
-  /* line 102, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+  /* line 104, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
   .contact-strip li:first-child {
     /* Texto 'Pedidos al xxxxxx' */
   
     font-size: 1.7rem;
   }
 }
-/* line 109, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+/* line 111, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
 .home-cakes {
   margin-top: 125px;
   overflow: hidden;
 }
-/* line 114, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+/* line 116, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
 .cakes-list {
   margin: 0 auto;
 }
-/* line 116, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+/* line 118, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
 .cakes-list .cake {
   width: 100%;
   margin-right: 5px;
   margin-left: 5px;
 }
-/* line 120, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+/* line 122, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
 .cakes-list .cake h2 {
   margin-bottom: 0;
 }
-/* line 123, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+/* line 125, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
 .cakes-list .cake span {
   font-size: 1rem;
   line-height: 5px;
 }
-/* line 127, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+/* line 129, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
 .cakes-list .cake img {
   display: block;
   margin: 0 auto;
 }
-/* line 132, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+/* line 134, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
 .cakes-list .cake-footer {
   text-align: center;
   margin: 10px auto;
@@ -4840,11 +4842,11 @@ span + .entry-title {
   text-shadow: 0 1px 1px #000000;
   width: 80%;
 }
-/* line 138, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+/* line 140, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
 .cakes-list .cake-footer div {
   float: left;
 }
-/* line 142, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+/* line 144, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
 .cakes-list .cake-quote {
   width: 50%;
   background-color: #4cbaab;
@@ -4863,10 +4865,7 @@ span + .entry-title {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
-}
-/* line 146, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
-.cakes-list .cake-quote a {
-  color: white;
+  cursor: pointer;
 }
 /* line 149, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
 .cakes-list .cake-quote:hover {
@@ -4921,45 +4920,49 @@ span + .entry-title {
   height: 200px;
 }
 /* line 183, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
-.home-contact form button {
+.home-contact form input[type=submit] {
   float: right;
   color: white;
   background-color: #4cbaab;
-  font-size: 2rem;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  font-size: 1.5rem;
+  width: 200px;
+  padding: 10px;
+  margin-top: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
-/* line 193, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+/* line 196, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
 .footer {
-  text-align: center;
+  text-align: left;
+  font-size: 0.9rem;
 }
-/* line 195, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
-.footer .footer-left {
-  display: inline;
-  font-size: 1rem;
-}
-/* line 198, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
-.footer .footer-left img {
+/* line 199, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+.footer img {
+  width: 120px;
+  height: 120px;
   float: left;
+  margin-top: -27px;
+  margin-bottom: 20px;
 }
-/* line 201, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
-.footer .footer-left .schema-content {
-  margin-top: 30px;
+/* line 206, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+.footer a:first-child {
+  font-size: 1rem;
+  font-weight: 700;
 }
-/* line 205, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
-.footer .footer-right {
-  margin-top: 20px;
-  display: inline;
-}
-/* line 208, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
-.footer .footer-right div {
-  font-weight: 600;
-  font-size: 2rem;
-  border-bottom: 1px solid #4cbaab;
-}
-/* line 213, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
-.footer .footer-right span {
-  display: block;
-  font-size: 1.2rem;
+@media only screen and (min-width: 48em) {
+  /* line 210, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+  .footer {
+    font-size: 1rem;
+  }
+  /* line 212, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+  .footer img {
+    width: 200px;
+    height: 200px;
+    margin-top: -30px;
+  }
+  /* line 217, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+  .footer a:first-child {
+    font-size: 2rem;
+  }
 }

@@ -15,7 +15,7 @@
 <div id="main" role="main" itemprop="mainContentOfPage">
   <img src="images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" itemprop="image">
   <div class="entry-wrapper">
-      <div class="home" itemscope>
+      <div id="business" class="home" itemscope>
         <figure>
           <img src="images/veronica.jpg" width="200" height="200" itemprop="image">
         </figure>
@@ -32,11 +32,11 @@
     <div class="contact-strip">
       <ul>
         <li>{{ page.text.strip.first }}</li>
-        <li>{{ page.text.strip.second }}</li>
+        <li><a href="mailto:{{ site.owner.email }}">{{ site.owner.email }}</a></li>
         <li>{{ page.text.strip.third }}</li>
       </ul>
     </div>
-    <div class="home home-cakes">
+    <div id="cakes" class="home home-cakes">
         <header>
           <h1>{{ page.text.cakes }}</h1>
         </header>
@@ -44,9 +44,9 @@
           {% include featured-cakes.html %}
         </div>
     </div><!-- /.home .home-cakes -->
-    <div class="home home-contact">
+    <div id="contact" class="home home-contact">
         <header>
-          <h1>{{ page.text.contact }}</h1>
+          <h1>{{ page.text.contact.title }}</h1>
         </header>
         <div>
           {% include contact-form.html %}

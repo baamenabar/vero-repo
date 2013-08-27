@@ -1,6 +1,74 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <script src="assets/js/main.min.js"></script>
+<script src="assets/js/vendor/jquery.magnific-popup.js"></script>
+<script>
+'use strict';
+
+var quote = {
+    init: function(){
+      var that = this;
+      var products = new Array();
+      $('.cake > h2').each(function(){
+        products.push($(this).html());
+      });
+      var i = 0;
+      $('.cake-quote').each(function(){
+        var product = products[i++];
+        $(this).click(function(){
+          that.doQuote(product);
+        })
+      });
+    },
+    doQuote: function(product){
+      var txt =  $('textarea');
+      var quote = 'Hola, estoy interesado/a en el producto "'+product+'" ';
+      if($(txt).val() != ''){
+        if(confirm('Al parecer tienes un mensaje escrito en el formulario. Presionar "Aceptar" para sobre-escribir tu mensaje o "Cancelar" para mentener tu mensaje original.')){
+          $(txt).focus().val(quote);
+          $('html, body').animate({ scrollTop: $('textarea').offset().top }, 1000);
+        }
+      } else {
+        $(txt).focus().val(quote);
+        $('html, body').animate({ scrollTop: $('textarea').offset().top }, 1000);
+      }
+    }
+};
+
+var menu = {
+  init: function(){
+    var sections = ['business', 'cakes', 'contact'];
+    var i = 0;
+    $('#site-nav ul li').each(function(){
+      var section = sections[i++];
+      $(this).click(function(){
+        $('html, body').animate({ scrollTop: $('#'+section).offset().top }, 1000);
+        return false;
+      });
+    });
+  }
+};
+
+$(function() {
+  quote.init();
+  menu.init();
+
+$('.zoom-gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    closeOnContentClick: false,
+    closeBtnInside: false,
+    mainClass: 'mfp-with-zoom mfp-img-mobile',
+    image: {
+      verticalFit: true
+    },
+    gallery: {
+      enabled: true
+    }
+  });
+
+});
+</script>
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>
