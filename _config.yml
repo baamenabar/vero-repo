@@ -4,7 +4,8 @@ logo:             logo.svg
 disqus_shortname:
 #Comment out url when working locally to resolve base urls correctly
 #url:              http://your-website.com
-
+#Contact form
+simple_form_token: 09d5a248cb60ff4582dbe1984e0618bb
 # Owner/author information
 owner:
   name:           Verónica López

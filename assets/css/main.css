@@ -4933,11 +4933,18 @@ span + .entry-title {
   border-radius: 10px;
 }
 /* line 196, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+.msg-contact {
+  display: none;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+/* line 203, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
 .footer {
   text-align: left;
   font-size: 0.9rem;
 }
-/* line 199, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+/* line 206, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
 .footer img {
   width: 120px;
   height: 120px;
@@ -4945,24 +4952,42 @@ span + .entry-title {
   margin-top: -27px;
   margin-bottom: 20px;
 }
-/* line 206, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+/* line 213, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
 .footer a:first-child {
   font-size: 1rem;
   font-weight: 700;
 }
 @media only screen and (min-width: 48em) {
-  /* line 210, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+  /* line 217, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
   .footer {
     font-size: 1rem;
   }
-  /* line 212, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+  /* line 219, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
   .footer img {
     width: 200px;
     height: 200px;
     margin-top: -30px;
   }
-  /* line 217, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+  /* line 224, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
   .footer a:first-child {
     font-size: 2rem;
   }
+}
+/* line 231, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+.zoom-gallery a {
+  width: 300px;
+  height: 300px;
+}
+/* line 237, C:\xampp\htdocs\medula\veronica-reposteria\assets\less\custom-medula.less */
+.error-box {
+  position: absolute;
+  background-color: red;
+  color: white;
+  width: 50px;
+  text-align: center;
+  margin: 5px 5px;
+  opacity: 0.6;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
 }
