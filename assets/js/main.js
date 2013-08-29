@@ -757,7 +757,7 @@ var responsiveNav = (function (window, document) {
 
 //Custom Medula
 'use strict';
-
+// Some tools :)
 var tools = {
   scrollTo: function(element){
      $('html, body').animate({ scrollTop: $(element).offset().top }, 1000);
@@ -792,7 +792,7 @@ var tools = {
     });
   }
 }
-
+//Quote button
 var quote = {
     init: function(){
       var that = this;
@@ -811,6 +811,14 @@ var quote = {
     doQuote: function(product){
       var txt =  $('textarea');
       var quote = 'Hola, estoy interesado/a en el producto "'+product+'" ';
+      if($('.msg-contact').length > 0){
+        $('input[type!="submit"]').each(function(){
+          $(this).val('');
+        })
+        $('textarea').val('');
+        $('.msg-contact').remove().slideUp();
+        $('#contact-form').slideDown();
+      }
       if($(txt).val() != ''){
         if(confirm('Al parecer tienes un mensaje escrito en el formulario. Presiona "Aceptar" para sobre-escribir tu mensaje o "Cancelar" para mentener tu mensaje original.')){
           $(txt).focus().val(quote);
@@ -822,7 +830,7 @@ var quote = {
       }
     }
 };
-
+// Menu
 var menu = {
   init: function(){
     var sections = ['business', 'cakes', 'contact'];
@@ -836,7 +844,7 @@ var menu = {
     });
   }
 };
-
+// Contact form
 var contact = {
 
   user: { name: '', phone: '', email: '', msg: '' },
@@ -896,7 +904,7 @@ var contact = {
     });
   }
 }
-
+// Galerry
 $(function() {
   quote.init();
   menu.init();
