@@ -855,7 +855,7 @@ var contact = {
         that.send();
       }
       return false;
-    })
+    });
   },
   checkForm: function(){
     var valid = true;
