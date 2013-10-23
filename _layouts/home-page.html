@@ -36,20 +36,52 @@
         <li>{{ page.text.strip.third }}</li>
       </ul>
     </div>
-    <div id="cakes" class="home home-cakes">
+    <section id="cakes" class="home home-cakes">
         <header>
           <h1>{{ page.text.cakes }}</h1>
         </header>
+        {% include featured-cakes.html %}
+    </section><!-- /.home .home-cakes -->
+    <section class="home">
+        <header>
+          <h1 class="no-margin">{{ page.text.traditional-cakes.title }}</h1>
+          <span class="description">{{ page.text.traditional-cakes.description }}</span>
+        </header>
         <div>
-          {% include featured-cakes.html %}
+          {% include traditional-cakes.html %}
         </div>
-    </div><!-- /.home .home-cakes -->
-    <div id="contact" class="home home-contact">
+    </section>
+    <section class="home">
+        <header>
+          <h1>{{ page.text.special-cakes.title }}</h1>
+        </header>
+        <div>
+          {% include special-cakes.html %}
+        </div>
+    </section>
+    <section class="home">
+        <header>
+          <h1>{{ page.text.cocktail.title }}</h1>
+        </header>
+        <div>
+          {% include cocktail.html %}
+        </div>
+    </section>
+    <section class="home">
+        <header>
+          <h1>{{ page.text.house-speciality.title }}</h1>
+          <span class="description">{{ page.text.house-speciality.description }}</span>
+        </header>
+        <div>
+          {% include house-speciality.html %}
+        </div>
+    </section>
+    <section id="contact" class="home home-contact">
         <header>
           <h1>{{ page.text.contact.title }}</h1>
         </header>
           {% include contact-form.html %}
-    </div><!-- /.home .home-cakes -->
+    </section><!-- /.home .home-cakes -->
   </div><!-- /.home-wrapper -->
 </div><!-- /#main -->
 

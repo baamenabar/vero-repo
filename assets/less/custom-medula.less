@@ -11,13 +11,16 @@
 	header {
 		h1 {
 			margin-bottom: 10px;
+			&.no-margin {
+				margin-bottom: -10px;
+			}
 		}
 	}
 	.home-content {
 		color: @verde-agua;
 		font-weight: 600;
 		margin-left: 0;
-		margin-right: 0;
+		margin-right: 1;
 	}
 	.home-sub-content {
 		margin-top: 20px;
@@ -113,18 +116,24 @@
 	overflow: hidden;
 }
 
-.cakes-list {
+.cakes-list-featured {
 	margin: 0 auto;
 	.cake {
+		&:first-child {
+			margin-top: 0;
+		}
 		width: 100%;
+		margin-top: 60px;
 		margin-right: 5px;
 		margin-left: 5px;
 		h2 {
 			margin-bottom: 0;
+			font-size: 1.3em;
 		}
 		span {
 			font-size: 1rem;
-			line-height: 5px;
+			display: block;
+			min-height: 55px;
 		}
 		img {
 			display: block;
@@ -158,14 +167,85 @@
 	}
 	@media @medium {
 		.cake {
-			float: left;
+			display: inline-block;
+			vertical-align: top;
 			width: 300px;
 			margin-right: 20px;
+			margin-top: 0;
 		}
 	}
 	@media @large {
 		.cake {
 			margin-right: 5px;
+		}
+	}
+}
+
+.cake-list {
+	color: white;
+	.cake {
+		&:nth-child(even) {
+		background-color: @verde-agua-claro;
+		}
+		&:nth-child(odd) {
+			background-color:  @verde-agua;
+		}
+		&:first-child {
+			border-top: none;
+		}
+		border-top: 2px solid #318579;
+		.cake-title {
+			h2 {
+				font-size: 1.1em;
+			}
+			font-weight: bold;
+			text-align: center;
+			padding-top: 2px;
+		}
+		.cake-description {
+			margin-bottom: 5px;
+			padding: 5px;
+		}
+		.cake-price {
+			font-weight: bold;
+			text-align: center;
+			padding: 5px;
+			font-size: 1.1em;
+		}
+		.cake-quote {
+			text-align: center;
+			background-color: @cafe;
+			border-top: 2px solid #318579;
+			padding: 5px;
+			font-weight: bold;
+			cursor: pointer;
+			&:hover {
+				background-color: #4e352e;
+			}
+		}
+	}
+	@media @large {
+		.cake {
+			display: table;
+			.cake-title  {
+				display: table-cell;
+				width: 25%;
+				padding: 5px;
+			}
+			.cake-description {
+				display: table-cell;
+			}
+			.cake-price {
+				display: table-cell;
+				vertical-align: middle;
+				width: 20%;
+			}
+			.cake-quote {
+				display: table-cell;
+				vertical-align: middle;
+				width: 10%;
+				border: none;
+			}
 		}
 	}
 }
@@ -243,4 +323,8 @@
 	margin: 5px 5px;
 	opacity: 0.6;
 	.rounded(30px);
+}
+
+.hide {
+	display: none;
 }

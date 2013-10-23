@@ -810,8 +810,8 @@ var quote = {
     init: function(){
       var that = this;
       var products = new Array();
-      $('.cake > h2').each(function(){
-        products.push($(this).html());
+      $('.cake h2').each(function(){
+        products.push($(this).text());
       });
       var i = 0;
       $('.cake-quote').each(function(){

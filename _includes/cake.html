@@ -1,13 +1,15 @@
 <div class="cake" itemscope itemtype="http://schema.org/Product">
   <h2 itemprop="name">{{ cake.title }}</h2>
-  <span itemprop="description">{{ cake.description }}</span>
   <div class="zoom-gallery" style="position: relative;">
 	<a href="images/{{ cake.image.one }}.jpg" itemprop="image" title="{{ cake.title }}">
 		<img src="images/{{ cake.image.one }}_300x300.jpg" alt="{{ cake.title }}" width="300" height="300">
 	</a>
-	<a href="images/{{ cake.image.two }}.jpg" title="{{ cake.title }}" style="display: none;">
-		<img src="images/{{ cake.image.two }}_300x300.jpg" alt="{{ cake.title }}" width="300" height="300" style="display: none;">
+  {% if cake.image.two %}
+	<a href="images/{{ cake.image.two }}.jpg" title="{{ cake.title }}" class="hide">
+		<img src="images/{{ cake.image.two }}_300x300.jpg" alt="{{ cake.title }}" width="300" height="300" class="hide">
 	</a>
+  {% endif %}
+  <span itemprop="description">{{ cake.description }}</span>
 </div>
   <div class="cake-footer">
   	<div class="cake-quote">Cotizar</div>
