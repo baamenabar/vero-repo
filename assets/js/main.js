@@ -772,8 +772,8 @@ var navigation = responsiveNav("#site-nav", { // Selector: The ID of the wrapper
 'use strict';
 // Some tools :)
 var tools = {
-  scrollTo: function(element){
-     $('html, body').animate({ scrollTop: $(element).offset().top }, 1000);
+  scrollTo: function(element, callback){
+    $('html, body').animate({ scrollTop: $(element).offset().top }, 'slow', callback);
   },
   trim: function(string){
     return string.replace(/^\s+/g,'').replace(/\s+$/g,'');
@@ -834,13 +834,17 @@ var quote = {
       }
       if($(txt).val() != ''){
         if(confirm('Al parecer tienes un mensaje escrito en el formulario. Presiona "Aceptar" para sobre-escribir tu mensaje o "Cancelar" para mentener tu mensaje original.')){
-          $(txt).focus().val(quote);
-          tools.scrollTo('textarea');
+          tools.scrollTo('textarea', this.focusForm(quote));
         }
       } else {
-        $(txt).focus().val(quote);
-        tools.scrollTo('textarea');
+        tools.scrollTo('textarea', this.focusForm(quote));
       }
+    },
+    focusForm: function(quote){
+      return function(){
+        var txt =  $('textarea');
+        $(txt).focus().val(quote);
+      };
     }
 };
 // Menu
